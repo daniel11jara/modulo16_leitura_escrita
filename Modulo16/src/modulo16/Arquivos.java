@@ -3,6 +3,7 @@ package modulo16;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Iterator;
 
 public class Arquivos {
 
@@ -19,9 +20,17 @@ public class Arquivos {
 		//classe que escreve no arquivo
 		FileWriter escrever_no_arquivo = new FileWriter(arquivo);
 		
-		escrever_no_arquivo.write("meu texto no arquivo");
+		for (int i = 1; i<=10; i++) {
+			escrever_no_arquivo.write("Texto da minha linha " + i + "\n");
+			
+		}
+		
+		
+		
 		escrever_no_arquivo.flush();//usado para persistir
-		escrever_no_arquivo.close();
+		escrever_no_arquivo.close();//fechando o arquivo
+		
+		
 	}
 
 }
