@@ -1,9 +1,10 @@
-package modulo16;
+package Arquivos;
 
 import java.io.File;
+
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Arquivos {
@@ -27,10 +28,6 @@ public class Arquivos {
 		pessoa3.setNome("Jessica");
 		
 		List<Pessoa> pessoas = new ArrayList<Pessoa>();
-		pessoas.add(pessoa1);
-		pessoas.add(pessoa2);
-		pessoas.add(pessoa3);
-				
 		
 		//classe que cria arquivo
 		File arquivo = new File("C:\\Users\\danie\\git\\modulo16_leitura_escritab\\Modulo16\\src\\modulo16\\arquivo.tx");
